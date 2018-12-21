@@ -2,8 +2,8 @@
 	<div class="banner-box">
 	 <swiper :options="swiperOption" ref="mySwiper" >
 	    <!-- slides -->
-	    <swiper-slide v-for="item of swiperList">
-			<img :src="item.imgUrl" alt="" class="banner" :key="item.id">
+	    <swiper-slide v-for="item of swiperList" :key="item.id">
+			<img :src="item.imgUrl" alt="" class="banner" >
 	    </swiper-slide>
 	    <!-- Optional controls -->
 	    <div class="swiper-pagination"  slot="pagination"></div>
