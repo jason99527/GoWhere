@@ -64,15 +64,16 @@
 	.item-info{
 		flex: 1
 		min-width:0;
-		padding:.1rem
+		padding:.1rem .2rem
 	}
 	.item-title{
 		line-height: .54rem;
-		font-size:.32rem;
+		font-size:.28rem;
 		ellipsis()
 	}
 	.item-desc{
-		line-height: .5rem;
+		line-height: .4rem;
+		font-size:.24rem;
 		color:#616161;
 		ellipsis()
 	}
