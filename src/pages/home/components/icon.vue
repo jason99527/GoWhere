@@ -19,55 +19,6 @@
 		name:'HomeIcons',
 		data(){
 			return{
-				iconList:[{
-					id:'01',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-					desc:'热门景点'
-				},{
-					id:'02',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-					desc:'深圳必游'
-				},{
-					id:'03',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-					desc:'游乐场'
-				},{
-					id:'04',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-					desc:'海洋馆'
-				},{
-					id:'01',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-					desc:'热门景点'
-				},{
-					id:'02',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-					desc:'深圳必游'
-				},{
-					id:'03',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-					desc:'游乐场'
-				},{
-					id:'04',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-					desc:'海洋馆'
-				},{
-					id:'01',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-					desc:'热门景点'
-				},{
-					id:'02',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-					desc:'深圳必游'
-				},{
-					id:'03',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png',
-					desc:'游乐场'
-				},{
-					id:'04',
-					imgUrl:'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-					desc:'海洋馆'
-				}],
 				swiperOption:{
 
 				}
@@ -76,7 +27,7 @@
 		computed:{
 			pages(){
 				var pages = []
-				this.iconList.forEach((item,index)=>{
+				this.list.forEach((item,index)=>{
 					let page = Math.floor(index/8)
 					if(!pages[page]){
 						pages[page] = []
@@ -85,6 +36,9 @@
 				})
 				return pages;
 			}
+		},
+		props:{
+			list:''
 		}
 	}
 </script>
